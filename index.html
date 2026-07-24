@@ -7,22 +7,31 @@
       name="description"
       content="Michael Zhang (Zhang Zhehan) - personal academic website for AIGC algorithms, multimodal machine learning, multi-agent collaboration, and HCI."
     />
+    <meta name="theme-color" content="#050505" />
     <title>Michael Zhang | 张哲晗</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Press+Start+2P&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Michael Zhang home">
         <span class="brand-mark">MZ</span>
         <span>Michael Zhang</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -34,9 +43,10 @@
         <a href="#works">Works</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="nav-scrim" aria-hidden="true"></div>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
       <section class="hero section-band">
         <div class="hero-copy">
           <p class="eyebrow">[ New ID ]</p>
@@ -56,9 +66,13 @@
             <span>Multimodal ML</span>
             <span>HCI</span>
           </div>
+          <div class="availability" aria-label="Current availability">
+            <span class="availability-dot" aria-hidden="true"></span>
+            <span>Currently exploring research collaborations</span>
+          </div>
         </div>
 
-        <div class="pixel-stage" aria-label="Pixel style avatar and research console">
+        <div class="pixel-stage" role="img" aria-label="Pixel style avatar and research console">
           <div class="pixel-window">
             <div class="window-bar">
               <span></span>
@@ -170,6 +184,7 @@
           <article class="work-item">
             <div class="work-badge">Ongoing</div>
             <div>
+              <p class="work-meta">iDVx Lab · Research Project</p>
               <h3>Framing</h3>
               <p>
                 A current research project with iDVx Lab. Details, paper status, demo, and code links
@@ -185,10 +200,36 @@
           <p class="section-kicker">Contact</p>
           <h2>Open to research conversations and collaborations.</h2>
         </div>
-        <a class="contact-card" href="mailto:zzh050904@outlook.com">
-          <span>Email</span>
-          <strong>zzh050904@outlook.com</strong>
-        </a>
+        <div
+          class="contact-card"
+          role="group"
+          aria-labelledby="contact-label"
+        >
+          <span id="contact-label" class="contact-label">Email</span>
+          <div class="contact-address-list">
+            <a class="contact-address" href="mailto:zzh050904@tongji.edu.cn">
+              <span>School Email</span>
+              <strong>zzh050904@tongji.edu.cn</strong>
+            </a>
+            <a class="contact-address" href="mailto:zzh050904@outlook.com">
+              <span>Personal Email</span>
+              <strong>zzh050904@outlook.com</strong>
+            </a>
+          </div>
+          <p>Open to research conversations, project ideas, and collaboration.</p>
+          <div class="contact-actions">
+            <a class="contact-email" href="mailto:zzh050904@outlook.com">Start a conversation →</a>
+            <button
+              class="copy-email"
+              type="button"
+              data-email="zzh050904@outlook.com"
+              data-copied-label="Email copied"
+            >
+              Copy email
+            </button>
+          </div>
+          <span class="copy-status" role="status" aria-live="polite"></span>
+        </div>
       </section>
     </main>
 
