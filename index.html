@@ -1,243 +1,168 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Michael Zhang (Zhang Zhehan) - personal academic website for AIGC algorithms, multimodal machine learning, multi-agent collaboration, and HCI."
-    />
-    <meta name="theme-color" content="#050505" />
-    <title>Michael Zhang | 张哲晗</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Press+Start+2P&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body id="top">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Michael Zhang home">
-        <span class="brand-mark">MZ</span>
-        <span>Michael Zhang</span>
-      </a>
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Open navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhehan (Michael) Zhang, Applied Physics undergraduate at Tongji University and AI Agent Engineering Intern at REDnote Lab1327. Research in LLM agents, memory, reliable execution, and human–AI collaboration.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Zhehan Zhang | Tongji University</title>
+  <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="wordmark" href="#top">M<span class="wordmark-dot">.</span> Zhang</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Page sections">
+        <a href="#about" aria-current="location">About</a>
         <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#works">Projects</a>
         <a href="#education">Education</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="nav-scrim" aria-hidden="true"></div>
-    </header>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="profile" aria-label="Personal profile">
+      <img class="profile-portrait" src="assets/portrait.png" alt="Portrait of Zhehan Zhang" width="146" height="176">
+      <h1>Zhehan Zhang</h1>
+      <p class="chinese-name" lang="zh-CN">张哲晗 <span> / Michael</span></p>
+      <p class="profile-role">Undergraduate in Applied Physics</p>
+      <p class="affiliation">Guohao College · Tongji University</p>
+      <a class="profile-email" href="mailto:zzh050904@tongji.edu.cn">zzh050904@tongji.edu.cn</a>
+      <div class="profile-links"><a href="mailto:zzh050904@outlook.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Email</a><a href="assets/files/Zhehan_Zhang_CV.pdf" download="Zhehan_Zhang_CV.pdf" aria-label="Download two-page CV (PDF)">CV <span aria-hidden="true">↓</span></a><a href="#works">Projects <span aria-hidden="true">↗</span></a></div>
+      <div class="profile-note"><span class="status-dot" aria-hidden="true"></span>Open to research collaborations</div>
+    </aside>
 
     <main id="main-content" tabindex="-1">
-      <section class="hero section-band">
-        <div class="hero-copy">
-          <p class="eyebrow">[ New ID ]</p>
-          <h1>Michael Zhang</h1>
-          <p class="name-meta">[ Zhang Zhehan / 张哲晗 ]</p>
-          <p class="hero-text">
-            Undergraduate in Applied Physics at Tongji University, exploring AIGC algorithms,
-            multimodal machine learning, multi-agent collaboration, and human-computer interaction.
-          </p>
-          <div class="hero-actions" aria-label="Contact links">
-            <a class="button primary" href="mailto:zzh050904@outlook.com">Email Me</a>
-            <a class="button secondary" href="#research">Research Interests</a>
-          </div>
-          <div class="quick-facts" aria-label="Profile highlights">
-            <span>Tongji University</span>
-            <span>AIGC</span>
-            <span>Multimodal ML</span>
-            <span>HCI</span>
-          </div>
-          <div class="availability" aria-label="Current availability">
-            <span class="availability-dot" aria-hidden="true"></span>
-            <span>Currently exploring research collaborations</span>
-          </div>
-        </div>
-
-        <div class="pixel-stage" role="img" aria-label="Pixel style avatar and research console">
-          <div class="pixel-window">
-            <div class="window-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="avatar-grid">
-              <img src="assets/pixel-avatar.svg" alt="Pixel penguin avatar for Michael Zhang" />
-            </div>
-            <div class="console-lines" aria-hidden="true">
-              <span>init: personal.site</span>
-              <span>focus: AIGC + multi-agent</span>
-              <span>status: building research path</span>
-            </div>
-          </div>
-        </div>
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <p>I am <strong>Zhehan (Michael) Zhang (张哲晗)</strong>, an undergraduate in Applied Physics at <span class="accent">Guohao College, Tongji University</span>, through the Strong Foundation Program. I expect to graduate in June 2027.</p>
+        <p>My research interests center on <strong>LLM agents and multi-agent systems</strong>, particularly memory and reliable execution in long-horizon tasks. I am also interested in human–AI collaboration and multimodal learning.</p>
+        <p>I am currently an <strong>AI Agent Engineering Intern at REDnote (Xiaohongshu), Lab1327</strong>, working on <a href="#experience">Loomind</a>. My research projects span <a href="#chartmirror">agent-assisted visualization</a>, visualization framing, multimodal emotion recognition, and medical imaging communication.</p>
+        <div class="collaboration-note"><span aria-hidden="true">↗</span><p>I welcome research conversations and collaboration opportunities.<br><a href="mailto:zzh050904@outlook.com">Feel free to get in touch.</a></p></div>
       </section>
 
-      <section id="about" class="content-section two-column">
-        <div>
-          <p class="section-kicker">About Me</p>
-          <h2>Bridging intelligent systems and human-facing tools.</h2>
-        </div>
-        <div class="section-copy">
-          <p>
-            Nice to meet you. I am Michael Zhang (Zhang Zhehan / 张哲晗). I am currently studying
-            Applied Physics at Tongji University and preparing for research around intelligent technologies
-            and methods at the Autonomous Unmanned Systems Science Center, Tongji University.
-          </p>
-          <p>
-            This site is intentionally drafted as a living academic homepage. Additional academic details
-            and a real portrait can be added later when they are ready to share publicly.
-          </p>
-        </div>
-      </section>
-
-      <section id="research" class="content-section">
-        <div class="section-heading">
-          <p class="section-kicker">Research Interests</p>
-          <h2>Current Areas</h2>
-        </div>
+      <section id="research" class="section" aria-labelledby="research-title">
+        <h2 id="research-title">Research Interests</h2>
         <div class="research-grid">
-          <article class="research-card">
-            <span class="card-index">01</span>
-            <h3>AIGC Algorithms</h3>
-            <p>
-              Generative modeling, controllable content creation, and evaluation methods for AI-generated
-              artifacts across text, vision, and interaction contexts.
-            </p>
-          </article>
-          <article class="research-card">
-            <span class="card-index">02</span>
-            <h3>Multimodal Machine Learning</h3>
-            <p>
-              Learning representations that connect language, images, signals, and structured information
-              for more grounded intelligent systems.
-            </p>
-          </article>
-          <article class="research-card">
-            <span class="card-index">03</span>
-            <h3>Multi-Agent Collaboration</h3>
-            <p>
-              Agent coordination, planning, communication, and human oversight for reliable collaborative
-              AI workflows.
-            </p>
-          </article>
-          <article class="research-card">
-            <span class="card-index">04</span>
-            <h3>Human-Computer Interaction</h3>
-            <p>
-              Interface design and evaluation for AI tools that are interpretable, usable, and aligned
-              with real human workflows.
-            </p>
-          </article>
+          <article><span class="topic-number">01</span><h3>LLM Agents &amp; Multi-Agent Systems</h3><p>Coordinating agents, tools, and shared context across extended workflows.</p></article>
+          <article><span class="topic-number">02</span><h3>Memory &amp; Reliable Execution</h3><p>Task continuity, recovery, and verification in long-horizon agent systems.</p></article>
+          <article><span class="topic-number">03</span><h3>Human–AI Collaboration</h3><p>Inspectable AI workflows and visualization systems that support human understanding.</p></article>
+          <article><span class="topic-number">04</span><h3>Multimodal Learning</h3><p>LLM/VLM workflows, emotion recognition, and model evaluation.</p></article>
         </div>
       </section>
 
-      <section id="education" class="content-section timeline-section">
-        <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Learning Path</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <p class="timeline-date">Current</p>
-              <h3>Tongji University</h3>
-              <p>B.S. in Applied Physics / 应用物理本科</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <p class="timeline-date">Research Direction</p>
-              <h3>Autonomous Unmanned Systems Science Center, Tongji University</h3>
-              <p>Intelligent Technology and Methods / 智能技术与方法</p>
-            </div>
-          </article>
-        </div>
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <h2 id="experience-title">Research &amp; Industry Experience</h2>
+        <article class="experience-entry">
+          <div class="entry-header"><h3>REDnote (Xiaohongshu), Lab1327</h3><span class="entry-date">Jul 2026 – Present</span></div>
+          <p class="entry-role">AI Agent Engineering Intern · Loomind</p>
+          <p>I develop task-context management and execution infrastructure for Loomind, a system coordinating agents across requirement analysis, implementation, and verification.</p>
+          <ul class="experience-list">
+            <li>Maintain versioned task snapshots and handoff records so agents can resume shared work after interruptions.</li>
+            <li>Support capability selection and task verification with selection rationale, actual tool use, and evidence against acceptance criteria.</li>
+            <li>Implement cloud/local execution coordination, task leases, durable result queues, and idempotent reporting for failure recovery.</li>
+            <li>Contribute execution and evaluation infrastructure to an agent development project involving collaboration with the Qwen team.</li>
+          </ul>
+        </article>
       </section>
 
-      <section id="works" class="content-section works-section">
-        <div class="section-heading">
-          <p class="section-kicker">Works</p>
-          <h2>Selected Work</h2>
-        </div>
-        <div class="work-list">
-          <article class="work-item">
-            <div class="work-badge">Ongoing</div>
-            <div>
-              <p class="work-meta">iDVx Lab · Research Project</p>
-              <h3>Framing</h3>
-              <p>
-                A current research project with iDVx Lab. Details, paper status, demo, and code links
-                will be added after the work is publicly released.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section section-band">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Open to research conversations and collaborations.</h2>
-        </div>
-        <div
-          class="contact-card"
-          role="group"
-          aria-labelledby="contact-label"
-        >
-          <span id="contact-label" class="contact-label">Email</span>
-          <div class="contact-address-list">
-            <a class="contact-address" href="mailto:zzh050904@tongji.edu.cn">
-              <span>School Email</span>
-              <strong>zzh050904@tongji.edu.cn</strong>
-            </a>
-            <a class="contact-address" href="mailto:zzh050904@outlook.com">
-              <span>Personal Email</span>
-              <strong>zzh050904@outlook.com</strong>
-            </a>
+      <section id="works" class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected Research Projects</h2>
+        <article id="chartmirror" class="project">
+          <div class="project-art chart-art" aria-hidden="true"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><span class="art-caption">CHARTMIRROR</span></div>
+          <div class="project-copy">
+            <div class="project-heading"><h3>ChartMirror</h3><span class="badge">Ongoing</span></div>
+            <p class="project-meta">Full-stack development · Apr 2026 – Present</p>
+            <p>A multi-stage agent workflow that translates a reference image, dataset, and natural-language request into a visualization. Inspectable stages connect visual decomposition and data-role alignment with rendering, design-rule checking, and critic-guided repair.</p>
+            <p class="project-tech">Python · Flask · pandas · Pydantic · Altair · Plotly · WordCloud</p>
+            <p class="work-status">Planned submission to PacificVis 2027</p>
           </div>
-          <p>Open to research conversations, project ideas, and collaboration.</p>
-          <div class="contact-actions">
-            <a class="contact-email" href="mailto:zzh050904@outlook.com">Start a conversation →</a>
-            <button
-              class="copy-email"
-              type="button"
-              data-email="zzh050904@outlook.com"
-              data-copied-label="Email copied"
-            >
-              Copy email
-            </button>
+        </article>
+        <article id="framing" class="project">
+          <div class="project-art" aria-hidden="true"><div class="frame frame-back"></div><div class="frame frame-front"><span></span><span></span><span></span></div><span class="art-caption">CHART LINEAGE</span></div>
+          <div class="project-copy">
+            <div class="project-heading"><h3>The Afterlife of a Chart</h3></div>
+            <p class="project-meta">Research contributor &amp; co-author · Jan – Apr 2026</p>
+            <p>Studied how visualizations change as they circulate in online discourse. Organized visualization-lineage data, helped code real-world framing cases, and implemented backend logic for LLM-based multi-agent simulation of propagation and framing shifts.</p>
+            <p class="work-status">Unpublished manuscript</p>
           </div>
-          <span class="copy-status" role="status" aria-live="polite"></span>
+        </article>
+        <article class="project">
+          <div class="project-art emotion-art" aria-hidden="true"><div class="signal-lines"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="art-caption">MULTIMODAL / RL</span></div>
+          <div class="project-copy">
+            <div class="project-heading"><h3>AffectGPT-RL Reproduction</h3></div>
+            <p class="project-meta">With Prof. Zheng Lian, Tongji University · Mar – Jun 2026</p>
+            <p>Reproduced components of AffectGPT-RL for multimodal emotion recognition. Examined GRPO-based post-training, reward formulations, and the distinction between optimizing rewards and improving recognition quality.</p>
+            <p class="project-tech">Multimodal emotion recognition · GRPO · Model evaluation</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art medical-art" aria-hidden="true"><div class="report-sheet"><b>+</b><span></span><span></span><span></span></div><span class="art-caption">AI4MI</span></div>
+          <div class="project-copy">
+            <div class="project-heading"><h3>AI4MI: Medical Imaging Communication</h3><span class="badge">Ongoing</span></div>
+            <p class="project-meta">Undergraduate research contributor · Apr 2026 – Present</p>
+            <p>Review literature on patient-facing radiology reports, medical visualization, affective design, and trustworthy AI. Participate in interviews with eight clinicians and synthesize explanation needs and information gaps for patient-facing systems.</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art imaging-art" aria-hidden="true"><div class="wave-rings"><span></span><span></span><span></span></div><span class="art-caption">TERAHERTZ IMAGING</span></div>
+          <div class="project-copy">
+            <div class="project-heading"><h3>Terahertz Scattering Imaging</h3></div>
+            <p class="project-meta">Project lead · Dec 2023 – Oct 2025</p>
+            <p>Reproduced published terahertz imaging methods, including successive-interference-cancellation-aided spatial transformation imaging (SSTI). Examined reconstruction errors and edge noise in adaptive SSTI through computational implementations.</p>
+            <p class="work-status">Shanghai municipal undergraduate innovation project</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="education" class="section" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="education-entry">
+          <div class="education-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m3 12 13-7 13 7-13 7-13-7Z M8 15v9c5 4 11 4 16 0v-9M29 12v12"/></svg></div>
+          <div class="education-copy"><div class="entry-header"><h3>Tongji University</h3><span class="entry-date">Sep 2023 – Jun 2027 (expected)</span></div><p>B.Sc. in Applied Physics · Guohao College</p><p class="education-secondary">Strong Foundation Program · <span lang="zh-CN">强基计划</span></p>
+            <div class="academic-metrics"><span>GPA <strong>4.25/5.00</strong></span><span>Average <strong>87/100</strong></span><span>Class rank <strong>4/25</strong></span></div>
+            <p class="coursework">Selected coursework: Computational Physics; Artificial Intelligence and Physics; Quantum Mechanics.</p>
+          </div>
         </div>
       </section>
+
+      <section id="awards" class="section" aria-labelledby="awards-title">
+        <h2 id="awards-title">Selected Honors &amp; Awards</h2>
+        <ul class="award-list">
+          <li><span class="award-year">2025</span><span><strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling</span></li>
+          <li><span class="award-year">2025</span><span><strong>Silver Medal</strong>, University Physics Competition <span class="award-note">(2024 competition)</span></span></li>
+          <li><span class="award-year">2025</span><span><strong>Second Prize</strong>, Shanghai University Student Experimental Competition</span></li>
+          <li><span class="award-year">2024</span><span><strong>National First Prize</strong>, National College English Translation Competition</span></li>
+          <li><span class="award-year" aria-label="Year unspecified">—</span><span><strong>Second-Class Outstanding Undergraduate Scholarship</strong>, Tongji University</span></li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical Skills</h2>
+        <dl class="skills-list">
+          <div><dt>Programming &amp; data</dt><dd>Python, MATLAB, TypeScript, SQL, pandas, Pydantic</dd></div>
+          <div><dt>Machine learning</dt><dd>PyTorch, LLM/VLM workflows, GRPO reproduction, model evaluation</dd></div>
+          <div><dt>Agent &amp; web systems</dt><dd>LangGraph, FastAPI, Flask, React, SQLModel, MySQL, Git</dd></div>
+          <div><dt>Scientific computing &amp; visualization</dt><dd>COMSOL, LaTeX, Altair, Plotly, WordCloud</dd></div>
+          <div><dt>English</dt><dd>CET-4: 617 · CET-6: 528</dd></div>
+        </dl>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Get in Touch</h2><p>For research discussions, project ideas, or collaboration, you can reach me at:</p>
+        <div class="contact-grid"><div><span class="contact-label">University</span><a href="mailto:zzh050904@tongji.edu.cn">zzh050904@tongji.edu.cn <span aria-hidden="true">↗</span></a></div><div><span class="contact-label">Personal</span><a href="mailto:zzh050904@outlook.com">zzh050904@outlook.com <span aria-hidden="true">↗</span></a></div></div>
+        <div class="copy-row"><button class="copy-email" type="button" data-email="zzh050904@outlook.com">Copy personal email</button><span class="copy-status" role="status" aria-live="polite"></span></div>
+      </section>
+      <footer class="site-footer"><span>© <span id="year">2026</span> Michael Zhang</span><a href="#top">Back to top ↑</a></footer>
     </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Michael Zhang. Built as a living academic homepage.</p>
-      <a href="#top">Back to top</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  </div>
+</body>
 </html>
