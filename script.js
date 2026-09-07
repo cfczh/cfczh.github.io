@@ -2,6 +2,7 @@ document.documentElement.classList.add('js');
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 const links = [...nav.querySelectorAll('a')];
+const sectionLinks = links.filter(link => link.hash);
 function closeNav() {
   nav.classList.remove('is-open');
   toggle.setAttribute('aria-expanded', 'false');
@@ -12,10 +13,12 @@ toggle.addEventListener('click', () => {
 });
 links.forEach(link => link.addEventListener('click', () => {
   closeNav();
-  if (window.matchMedia('(max-width: 700px)').matches) {
+  if (link.hash && window.matchMedia('(max-width: 700px)').matches) {
     const target = document.querySelector(link.hash);
-    target.setAttribute('tabindex', '-1');
-    target.focus({ preventScroll: true });
+    if (target) {
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    }
   }
 }));
 document.addEventListener('keydown', event => {
@@ -29,7 +32,7 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(max-width: 700px)').addEventListener('change', closeNav);
 document.querySelector('#year').textContent = new Date().getFullYear();
-const sections = links.map(link => document.querySelector(link.hash));
+const sections = sectionLinks.map(link => document.querySelector(link.hash)).filter(Boolean);
 let scheduled = false;
 function updateNavigation() {
   let current = sections[0];
@@ -37,7 +40,7 @@ function updateNavigation() {
     if (section.getBoundingClientRect().top <= 160) current = section;
   }
   if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 3) current = sections.at(-1);
-  links.forEach(link => {
+  sectionLinks.forEach(link => {
     if (link.hash === `#${current.id}`) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   });
